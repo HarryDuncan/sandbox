@@ -6,6 +6,7 @@
       "dom.iterable",
       "esnext"
     ],
+    "baseUrl" : ".",
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -18,9 +19,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "typeRoots": [ "./types", "./node_modules/@types"]
+
   },
   "include": [
     "src"
-  ]
+  ],
+  "exclude": [ "node_modules", "src/client/@custom_types"]
 }
